@@ -10,6 +10,7 @@ console.log(email.lastIndexOf("m"));
 console.log(email.slice(0, 10)); //string[:10] <- in python
 console.log(email.substring(2, 5)); //Starts at index 2 and get 5 characters
 console.log(email.replace("@", "&")); //Replaces the first instance
+console.log(email.includes("@")); //Replaces the first instance
 
 //NUMBERS
 let radius = 10; //Type: Number
@@ -50,6 +51,7 @@ console.log(ages.join(", ")); // Joins all elements with a delimiter
 console.log(ninjas.indexOf("Ryu"));
 console.log(ninjas.concat(ages)); //Join two arrays
 ninjas.push("Henery"); //Adds a value to the end of the array - Alters the original object hence called a destructive method.
+ninjas.includes("Mario");
 
 ninjas.pop();
 
@@ -62,3 +64,15 @@ age = NaN; //
 console.log(age);
 
 //BOOLEANS
+console.log(true, false);
+age = 25;
+
+console.log(age == 25); //true
+console.log(age == 30); //false
+console.log(age == 30); //true
+console.log(age > 30); //false
+
+// == is a loose comparitor as it doesn't take into consideration the type
+
+console.log(age == "25"); //true - type ignored
+console.log(age === "25"); //false - type not ignored - Strict comparison
