@@ -36,3 +36,19 @@ let html = `
     <p>${author}</p>
     <span>This blog as ${likes}</span>
 `;
+
+//ARRAYS
+let ninjas = ["Shaun", "Ryu", "Chun-li"];
+console.log(ninjas[0]);
+ninjas[0] = "James";
+console.log(ninjas[0]);
+
+let ages = [20, 25, 30, 35];
+
+//ARRAY METHODS
+console.log(ages.join(", ")); // Joins all elements with a delimiter
+console.log(ninjas.indexOf("Ryu"));
+console.log(ninjas.concat(ages)); //Join two arrays
+ninjas.push("Henery"); //Adds a value to the end of the array - Alters the original object hence called a destructive method.
+
+ninjas.pop();
