@@ -76,3 +76,10 @@ console.log(age > 30); //false
 
 console.log(age == "25"); //true - type ignored
 console.log(age === "25"); //false - type not ignored - Strict comparison
+
+//TYPE CONVERSION
+let score = "100";
+score = Number(score);
+console.log((score += 1));
+console.log(typeof score);
+let nan = Number("cannot convert");
