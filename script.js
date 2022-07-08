@@ -52,3 +52,13 @@ console.log(ninjas.concat(ages)); //Join two arrays
 ninjas.push("Henery"); //Adds a value to the end of the array - Alters the original object hence called a destructive method.
 
 ninjas.pop();
+
+//NULLS AND UNDEFINED
+let age;
+console.log(age); //Undefines
+age = null; //
+console.log(age);
+age = NaN; //
+console.log(age);
+
+//BOOLEANS
