@@ -21,3 +21,31 @@ const ps = document.getElementsByTagName("p");
 
 console.log(para.innerText);
 para.innerText = "Ninjas are awersome!";
+
+const content = document.querySelector(".content");
+content.innerHTML = "<h2>This is a new h2 tag</h2>";
+
+const people = ["Mario", "Luigi", "Yoshi"];
+
+people.forEach((person) => {
+  content.innerHTML += `<p>${person}`;
+});
+
+//CHANGING element attributes
+const link = document.querySelector("a");
+console.log(link.getAttribute("href"));
+link.setAttribute("href", "https://www.youtube.com");
+link.innerText = "Youtube";
+
+const msg = document.querySelector("p.error");
+msg.setAttribute("error", "success");
+
+//Adding attributes
+msg.setAttribute("style", "color: green");
+
+const h2 = document.querySelector("h2.second-h2");
+h2.style.margin = "50px";
+h2.style.fontSize = "60px";
+h2.style.margin = ""; //Remove property
+
+//Adding or removing classes
