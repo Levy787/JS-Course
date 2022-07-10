@@ -54,3 +54,13 @@ console.log(content.classList);
 content.classList.add("error");
 content.classList.remove("error");
 content.classList.add("success");
+
+//Toggle class
+content.classList.toggle("error");
+
+//Parent, Children and Siblings
+const article = document.querySelector("article");
+
+Array.from(article.children).forEach((child) => {
+  child.classList.add("article-element");
+});
